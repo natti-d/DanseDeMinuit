@@ -1,0 +1,100 @@
+body{
+    top: 0;
+    margin: 0;
+}
+
+nav button, .offcanvas-body button{
+    background-color: #E89CA1;
+    color: #1C0602;
+    border: 1px solid #1C0602;
+    transition: 0.3s;
+}
+
+nav button:hover, .offcanvas-body button:hover{
+    color: #E89CA1;
+    background-color: #38040E;
+}
+
+#header-main{
+    background-image: url(../images/ballet3.jpg);
+    /*background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/ballet3.jpg');*/
+    background-position: center;
+    background-size: cover;
+}
+/*
+#header-main::after{
+    filter: sepia(100%) hue-rotate(130deg) invert(100%) contrast(100%) saturate(3) brightness(80%)
+}*/
+
+header{
+    background-color: #4E0911;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #1C0602;
+    background-color: #E89CA1;
+}
+.accordion-item{
+    border-color: #38040E;
+}
+
+.accordion-body{
+    background-color: #FBEEEF;
+}
+
+.bi-arrow-right{
+    transition: 0.5s;
+}
+#about-short button, .call{
+    color: #800E13;
+    border: 1px solid #800E13;
+}
+
+@media (hover: hover) {
+    #about-short button:hover{
+        border-color: #1C0602;
+        color: #1C0602;
+        background-color: #E89CA1;
+        .bi-arrow-right{
+            margin-left: 5px;
+        }
+    }
+
+    .call:hover{
+        border-color: #1C0602;
+        color: #1C0602;
+        background-color: #E89CA1;
+    }
+
+    nav .home-class{
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+}
